@@ -2,7 +2,13 @@
 
 @use "extended";
 
+marquee {
+  position: relative;
+  z-index: -2;
+}
 .contact {
+  position: relative;
+  z-index: -2;
   .icon-box {
     display: flex;
     font-size: 25px;

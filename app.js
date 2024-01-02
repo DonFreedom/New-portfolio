@@ -2,12 +2,25 @@ const app = Vue.createApp({
   template: "",
   data() {
     return {
+      visible: false,
+      viewedProject: {},
       projects: [
+        {
+          _id: "6574c69d0bb06bd0535047ce",
+          projectName: "Audiophile",
+          projectDescription:
+            "An e-commerce application that serves as the ultimate destination for high-end headphones, earphones and speakers. The platform, meticulously built with Next.js",
+          projectImage:
+            "https://firebasestorage.googleapis.com/v0/b/portfolical.appspot.com/o/Screenshot%202023-12-09%20at%208.59.16%20PM.png?alt=media&token=abb46a4d-e183-422b-9911-0ad7194731a6",
+          sourceCode: "https://github.com/Techboy07/audiophile",
+          live: "http://audiophile-techboy07.vercel.app",
+          __v: 0,
+        },
         {
           _id: "64fb65f2dd55f8e532e4aba1",
           projectName: "Ableton Website Clone",
           projectDescription:
-            "This is a clone of the Ableton entire website built with basic technologies such as HTML, CSS and JAVASCRIPT",
+            "This is a clone of the ableton entire website built with basic technologies such as html,css and javascript",
           projectImage:
             "https://temp-potab-907.netlify.app/img/Screenshot%20from%202022-12-05%2016-06-48.png",
           sourceCode: "",
@@ -18,7 +31,7 @@ const app = Vue.createApp({
           _id: "64fb6746dd55f8e532e4aba7",
           projectName: "Notaculus",
           projectDescription:
-            "This is a note taking app that is easily customizable with features like darkmode and user preferences such as accent colors, username etc. It also implements authentication. built with REACT,TYPESCRIPT, MATERIAL.UI and FIREBASE.",
+            "this is a note taking app that is easily customizable with features like darkmode and user preferences . It also implements authentication. built with react,typescript,material ui and firebase.",
           projectImage:
             "https://firebasestorage.googleapis.com/v0/b/portfolical.appspot.com/o/notaculus.png?alt=media&token=f774be9c-306b-4cfa-80ed-62488fdd748b",
           sourceCode: "https://github.com/Techboy07/Note-taking-app-v2",
@@ -29,18 +42,18 @@ const app = Vue.createApp({
         {
           _id: "6570767cbe87be305d7acfc4",
           projectName: "scrunchiefy",
-          projectDescription: "An E-commerce website built with NEXT.JS ",
+          projectDescription: "An E - commerce website built with next js ",
           projectImage:
             "https://firebasestorage.googleapis.com/v0/b/portfolical.appspot.com/o/project-images%2FScreenshot%202023-12-06%20at%202.12.44%20PM.png?alt=media&token=bf9bbe12-5a6a-45a4-8d59-01eec5b06878",
           sourceCode: "",
-          live: "https://scrunchiefy-18lyuzn02-techboy07.vercel.app/",
+          live: "https://scrunchiefy-app-techboy07.vercel.app/",
           __v: 0,
         },
         {
           _id: "64fb62d7dd55f8e532e4ab99",
           projectName: "Portfolio Template",
           projectDescription:
-            "This is a minimalist portfolio page built with BOOTSTRAP both simple and responsive",
+            "this is a minimalist portfolio page built with bootstrap both simple and responsive",
           projectImage:
             "https://temp-potab-907.netlify.app/img/Screenshot%20from%202022-12-05%2016-02-56.png",
           sourceCode: "",
@@ -50,13 +63,12 @@ const app = Vue.createApp({
 
         {
           _id: "64fb6412dd55f8e532e4ab9c",
-          projectName: "Advice Generator App",
+          projectName: "Youtube Clone",
           projectDescription:
-            "This is a random advice generator app just for fun",
-          projectImage:
-            "https://temp-potab-907.netlify.app/img/Screenshot%20from%202022-12-05%2016-00-52.png",
-          sourceCode: "",
-          live: "http://advict.netlify.app/",
+            "this is an identical clone of youtube it's fully functional,meticulously built with basic technologies like html css and js",
+          projectImage: "./images/YTclone.jpg",
+          sourceCode: "http://github.com/DonFreedom/YouTube-clone",
+          live: "",
           __v: 0,
         },
       ],
@@ -68,6 +80,12 @@ const app = Vue.createApp({
         "http://portfolical-v1-api.onrender.com/projects"
       );
       return projects;
+    },
+
+    showDetails(project) {
+      this.visible = !this.visible;
+      this.viewedProject = project;
+      return this.visible;
     },
   },
 });

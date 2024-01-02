@@ -27,9 +27,8 @@ main {
   p {
     color: variables.$grey;
     // font-size: variables.$description_text;
-    
-      @extend .para !optional;
-    
+
+    @extend .para !optional;
   }
   .view_work {
     text-decoration: none;
@@ -55,7 +54,7 @@ main {
     h3 {
       font-size: 4rem;
     }
-     .view_work {
+    .view_work {
       font-size: 16px;
     }
   }
