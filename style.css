@@ -117,6 +117,7 @@ nav .nav-wrapper ul li span {
     width: 100%;
     background-color: transparent;
     padding: 0;
+    height: auto;
   }
   nav .nav-wrapper ul {
     flex-direction: row;
@@ -386,8 +387,6 @@ marquee {
 }
 
 .contact {
-  position: relative;
-  z-index: -2;
   text-align: center;
 }
 .contact .icon-box {
