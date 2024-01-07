@@ -386,8 +386,8 @@ marquee {
 }
 
 .contact {
-  position: relative;
-  z-index: -2;
+  /*position: relative;
+  z-index: -2;*/
   text-align: center;
 }
 .contact .icon-box {
