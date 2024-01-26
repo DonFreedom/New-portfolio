@@ -386,8 +386,8 @@ marquee {
 }
 
 .contact {
-  /*position: relative;
-  z-index: -2;*/
+  position: relative;
+  /*z-index: -2;*/
   text-align: center;
 }
 .contact .icon-box {
@@ -414,7 +414,7 @@ marquee {
 }
 .contact input {
   display: block;
-  outline: none;
+  /*outline: none;*/
   border: 1px solid #60f7d2;
   background-color: #041b15;
   color: #8892b0;
